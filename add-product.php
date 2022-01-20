@@ -10,7 +10,7 @@ include('./includes/header.php');
 
 
 <div class="container-fluid">
-    <form id="product_form" action="./modules/add.php" method="post">
+    <form id="product_form" action="./classes/addHandler.php" method="post">
 
         <div class="d-flex flex-row">
             <div class="mr-auto p-2">
