@@ -31,13 +31,17 @@ class Add extends Operations{
 
     public function createProduct(){
         $object = new $this->type(...$this->data);
+        $sku = $object->getSku();
+        $name = $object->getName();
+        $price = $object->getPrice();
+        $description = $object->getDescription();
         $operations = new Operations();
 
         $validateInputs=$this->validate($object);
         $duplicated = $this->checkDuplicated($object, $operations);
         if(empty($validateInputs)){
             if($duplicated==0){
-                $operations->addProduct(...$this->data);
+                $operations->addProduct($sku,$name,$price,$description);
                 header("Location: ../");
                 session_unset();
 
