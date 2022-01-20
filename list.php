@@ -17,7 +17,7 @@ include('./includes/header.php');
                     <h2>Product List</h2>
                 </div>
                 <div class="p-2">
-                    <button class="btn btn-success" onclick="window.location.href='/add-product'" type="button" name="add">Add</button>
+                    <button class="btn btn-success" onclick="window.location.href='/add-product'" type="button" name="ADD">ADD</button>
                 </div>
                 <div class="p-2">
                     <button type="submit" class="btn btn-danger" name="delete">
