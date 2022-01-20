@@ -1,5 +1,5 @@
 <?php 
-include './classes/operations.class.php';
+include './classes/operations.php';
 
 $operations = new Operations();
 $result = $operations->getProducts();
@@ -11,7 +11,7 @@ include('./includes/header.php');
 ?>
 
 <div class="container-fluid">
-    <form method="post" action="./modules/delete.php">
+    <form method="post" action="./classes/deleteHandler.php">
             <div class="d-flex flex-row">
                 <div class="mr-auto p-2">
                     <h2>Product List</h2>
