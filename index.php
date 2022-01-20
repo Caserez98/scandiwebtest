@@ -2,6 +2,9 @@
 $request = $_SERVER['REQUEST_URI'];
 
 switch ($request) {
+    case '/index.php':
+        require __DIR__ . '/list.php';
+        break;
     case '/':
         require __DIR__ . '/list.php';
         break;
